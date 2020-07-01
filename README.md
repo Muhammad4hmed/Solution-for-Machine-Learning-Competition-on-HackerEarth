@@ -1,4 +1,4 @@
-This is my solution for machine learning competition on HackerEarth, which placed me on first position on leaderboard.
+This is my solution for machine learning competition on HackerEarth, which placed me on first position on leaderboard out of 5100+ competitors.
 Achieving position was not the motive but learning new things was.
 
 Leaderboard pic:
