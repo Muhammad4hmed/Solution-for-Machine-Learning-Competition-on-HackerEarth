@@ -1,0 +1,44 @@
+PLEASE NOTE: I have provided EDA reports in separate HTML pages and a flow chart for better understanding.
+
+
+
+
+Feature Engineering:
+1) I encoded categorical features using Target Mean Encoding
+2) Used Pandas's interpolate to fill missing values
+3) Created 900+ new features through EDA reports, please check MainNotebook to understand how I made them.
+	I deep dived into EDA and used some creativity to make them.
+
+
+
+
+Machine Learning:
+Approach 1:
+Sorted by Age and then Grouped data by Hometown and predicted separately for every hometown.
+
+Approach 2:
+Used whole data set for training and predicting.
+
+
+
+Hyperparameter Tuning:
+I did hyperparameter tuning using bayesian optimization, used optuna library.
+
+
+
+Ensembling/Blending:
+I made alot of predictions from above two approaches and combined them using following ways
+1) some % from multiple predictions, eg X% of A + Y% of B + Z% of C etc
+2) A + (sqaured difference of B and C)
+3) (A + B) - C
+4) (A + (sqaure of average of A and/or B and/or C) )
+
+Let say some submission E is obtained from one of above.
+then I used E to replace with A, B or C and repeated the above process multiple number of time.
+In other words, I keep repeating above submissions with obtained one and repeated this process too many times.
+
+
+
+
+Packages Used:
+Sklearn, GML, Sweetviz, Autofeat, Optuna etc
